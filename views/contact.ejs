@@ -1,0 +1,36 @@
+<% layout('./layout/boilerplate.ejs') %>
+<body>
+    <div class="contactus">
+        <div class="getintouch">
+            <h1>Get In<span>Touch</span></h1>
+        </div>
+        <div class="mainbox">
+            <div class="leftt">
+                <h2>Don't be Shy !</h2>
+                <p>Feel free to get in touch with me. I am always open to discussing new projects, Creative ideas or opportunities to be a part f your visions</p>
+                <div class="iconscontact">
+                    <span class="material-symbols-outlined" id="contact">
+                        mail
+                        </span>
+                        <p>Mail me <br>Work.hamesh@gmail.com</p>
+                </div>
+                <div class="iconscontact">
+                    <span class="material-symbols-outlined" id="contact">
+                        call
+                        </span>
+                        <p>Call me <br>6377743999</p>
+                </div>
+            </div>
+            <div class="rightt">
+              <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="4e97cd55-c9c3-49f5-a0d4-e484b29fc7d1">
+               <input type="text" placeholder="Full Name" name="name" required>
+               <input type="text" placeholder="Email" name="email" required>
+               <input type="number" placeholder="Age" name="age" required>
+               <input type="text" placeholder="Your Message" name="msg" class="msgbox" required>
+               <button type="submit">Send Message</button>
+              </form>
+            </div>
+        </div>
+    </div>
+</body>
