@@ -10,7 +10,7 @@ app.set('views',path.join(__dirname,'views'))
 app.engine('ejs',ejsMate)
 app.use(express.static(path.resolve('./public')))
 app.get('/',(req,res)=>{
-    res.send('home')
+    res.render('home.ejs',{title:'Portfolio'})
 })
 
 app.get('/home',(req,res,next)=>{
